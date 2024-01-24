@@ -87,7 +87,7 @@
                     </ul>
                 </div>
                 <div class="navbar-end space-x-2 lg:space-x-6 ml-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <svg class="cursor-pointer transform hover:scale-150" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <g clip-path="url(#clip0_5_6)">
                             <path
                                 d="M3 10C3 10.9193 3.18106 11.8295 3.53284 12.6788C3.88463 13.5281 4.40024 14.2997 5.05025 14.9497C5.70026 15.5998 6.47194 16.1154 7.32122 16.4672C8.1705 16.8189 9.08075 17 10 17C10.9193 17 11.8295 16.8189 12.6788 16.4672C13.5281 16.1154 14.2997 15.5998 14.9497 14.9497C15.5998 14.2997 16.1154 13.5281 16.4672 12.6788C16.8189 11.8295 17 10.9193 17 10C17 9.08075 16.8189 8.1705 16.4672 7.32122C16.1154 6.47194 15.5998 5.70026 14.9497 5.05025C14.2997 4.40024 13.5281 3.88463 12.6788 3.53284C11.8295 3.18106 10.9193 3 10 3C9.08075 3 8.1705 3.18106 7.32122 3.53284C6.47194 3.88463 5.70026 4.40024 5.05025 5.05025C4.40024 5.70026 3.88463 6.47194 3.53284 7.32122C3.18106 8.1705 3 9.08075 3 10Z"
@@ -101,7 +101,7 @@
                             </clipPath>
                         </defs>
                     </svg>
-                    <a class="btn bg-primary-color lg:w-auto font-bold manrope text-white ml-0 rounded-lg">Get
+                    <a class="btn border hover:bg-transparent text-black bg-amber-500 lg:w-auto font-bold manrope ml-0 rounded-lg">Get
                         Ticket</a>
                 </div>
             </div>
@@ -112,37 +112,40 @@
     <main class="container  mx-auto">
 
         <!-- Slider Section  -->
-        <section >
+        <section>
 
-            <div class="carousel h-[50vh] lg:h-[70vh] w-full">
+            <div class="flex justify-center">
 
-                <div id="slide1" class="carousel-item relative w-full">
-                    <img src="./Images/1.png" class="w-11/12 lg:w-full mx-3 lg:mx-0" />
-                    <div class="absolute flex gap-4 bottom-4 lg:bottom-8 lg:left-12 items-center justify-center md:justify-start left-0 right-0 md:left-5">
-                        <a href="#slide4" class="rounded-full flex items-center justify-center border-none h-8 w-8 bg-black text-white">❮</a> 
-                        <a href="#slide2" class="rounded-full flex items-center justify-center border-none h-8 w-8 bg-black text-white">❯</a>
-                      </div>
-                </div>
-                <div id="slide2" class="carousel-item relative w-full">
-                    <img src="./Images/cup.jpg" class="w-11/12 lg:w-full mx-3 lg:mx-0" />
-                    <div class="absolute flex gap-4 bottom-2 lg:bottom-8 lg:left-12 items-center justify-center md:justify-start left-0 right-0 md:left-5">
-                        <a href="#slide1" class="rounded-full flex items-center justify-center border-none h-8 w-8 bg-black text-white">❮</a> 
-                        <a href="#slide3" class="rounded-full flex items-center justify-center border-none h-8 w-8 bg-black text-white">❯</a>
-                      </div>
-                </div>
-                <div id="slide3" class="carousel-item relative w-full">
-                    <img src="./Images/rm.jpg" class="w-11/12 lg:w-full mx-3 lg:mx-0" />
-                    <div class="absolute flex gap-4 bottom-2 lg:bottom-8 lg:left-12 items-center justify-center md:justify-start left-0 right-0 md:left-5">
-                        <a href="#slide2" class="rounded-full flex items-center justify-center border-none h-8 w-8 bg-black text-white">❮</a> 
-                        <a href="#slide4" class="rounded-full flex items-center justify-center border-none h-8 w-8 bg-black text-white">❯</a>
-                      </div>
-                </div>
-                <div id="slide4" class="carousel-item relative w-full">
-                    <img src="./Images/football.jpg" class="w-11/12 lg:w-full mx-3 lg:mx-0" />
-                    <div class="absolute flex gap-4 bottom-2 lg:bottom-8 lg:left-12 items-center justify-center md:justify-start left-0 right-0 md:left-5">
-                        <a href="#slide3" class="rounded-full flex items-center justify-center border-none h-8 w-8 bg-black text-white">❮</a> 
-                        <a href="#slide1" class="rounded-full flex items-center justify-center border-none h-8 w-8 bg-black text-white">❯</a>
-                      </div>
+                <div class="carousel h-[50vh] lg:h-[70vh] w-full">
+
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img src="./Images/1.png" class="w-11/12 lg:w-full mx-3 lg:mx-0" />
+                        <div class="absolute flex gap-4 bottom-5 lg:bottom-8 lg:left-12 items-center justify-center md:justify-start left-0 right-0 md:left-5">
+                            <a href="#slide4" class="rounded-full flex items-center justify-center border-none h-8 w-8 bg-black text-white">❮</a> 
+                            <a href="#slide2" class="rounded-full flex items-center justify-center border-none h-8 w-8 bg-black text-white">❯</a>
+                          </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="./Images/cup.jpg" class="w-11/12 lg:w-full mx-3 lg:mx-0" />
+                        <div class="absolute flex gap-4 bottom-5 lg:bottom-8 lg:left-12 items-center justify-center md:justify-start left-0 right-0 md:left-5">
+                            <a href="#slide1" class="rounded-full flex items-center justify-center border-none h-8 w-8 bg-black text-white">❮</a> 
+                            <a href="#slide3" class="rounded-full flex items-center justify-center border-none h-8 w-8 bg-black text-white">❯</a>
+                          </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <img src="./Images/rm.jpg" class="w-11/12 lg:w-full mx-3 lg:mx-0" />
+                        <div class="absolute flex gap-4 bottom-5 lg:bottom-8 lg:left-12 items-center justify-center md:justify-start left-0 right-0 md:left-5">
+                            <a href="#slide2" class="rounded-full flex items-center justify-center border-none h-8 w-8 bg-black text-white">❮</a> 
+                            <a href="#slide4" class="rounded-full flex items-center justify-center border-none h-8 w-8 bg-black text-white">❯</a>
+                          </div>
+                    </div>
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <img src="./Images/football.jpg" class="w-11/12 lg:w-full mx-3 lg:mx-0" />
+                        <div class="absolute flex gap-4 bottom-5 lg:bottom-8 lg:left-12 items-center justify-center md:justify-start left-0 right-0 md:left-5">
+                            <a href="#slide3" class="rounded-full flex items-center justify-center border-none h-8 w-8 bg-black text-white">❮</a> 
+                            <a href="#slide1" class="rounded-full flex items-center justify-center border-none h-8 w-8 bg-black text-white">❯</a>
+                          </div>
+                    </div>
                 </div>
             </div>
 
@@ -904,7 +907,7 @@
         <span class="ml-1">I confirm that I have read and agreed to Hockey's <a class="link link-primary">Terms of Service</a> and <a class="link link-primary">Privacy Policy</a> which explains how you may collect, use and disclose my personal information including to third parties.</span>
     </div>
      
-    <button class=" btn mt-3 manrope font-bold text-white text-xl text-center bg-primary-color w-full">Send Message</button>
+    <button class=" btn mt-3 manrope font-bold text-white text-xl text-center bg-amber-500 w-full">Send Message</button>
 
 </div>
 
